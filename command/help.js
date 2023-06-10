@@ -18,27 +18,27 @@ exports.allMenu = (role, ucapanWaktu, pushname, mundur, upload, download, ownerN
 Hitung Mundur Tahun Baru
 ${mundur}
 
-*STATISTICS*
- • Upload : ${upload}
- • Downloads : ${download}
+*Статистика*
+ • Выгрузка: ${upload}
+ • Загрузка: ${download}
 
-*BOT INFO*
- • Creator : ${ownerName}
- • Bot Name : ${botName}
- • Time : ${jam}
- • Date : ${tanggal(new Date())}
- • Runtime : ${runtime(process.uptime())}
+*Информация бота*
+ • Создатель: ${ownerName}
+ • Имя бота: ${botName}
+ • Время: ${jam}
+ • Дата: ${tanggal(new Date())}
+ • Рабочее время: ${runtime(process.uptime())}
 
-*USER INFO*
- • Name : ${pushname !== undefined ? pushname : '-'}
- • Status : ${isCreator ? 'Owner' : isPremium ? 'Premium' : 'Free'}
- • Limit : ${isCreator ? 'Unlimited' : isPremium ? 'Unlimited' : getLimit(sender, limitCount, limit)}
- • Limit Game : ${isCreator ? 'Unlimited' : cekGLimit(sender, gcount, glimit)}
- • Balance : ${toCommas(getBalance(sender, balance))}
- • Role : ${role}
+*Ваша публичная инфа*
+ • Имя: ${pushname !== undefined ? pushname : '-'}
+ • Статус: ${isCreator ? 'Owner' : isPremium ? 'Premium' : 'Free'}
+ • Лимит: ${isCreator ? 'Unlimited' : isPremium ? 'Unlimited' : getLimit(sender, limitCount, limit)}
+ • Игровой лимит: ${isCreator ? 'Unlimited' : cekGLimit(sender, gcount, glimit)}
+ • Баланс: ${toCommas(getBalance(sender, balance))}
+ • Роль: ${role}
  
  
-*MAIN MENU*${petik}
+*Основа*${petik}
  • ${prefix}menu
  • ${prefix}infobot
  • ${prefix}donate
@@ -53,7 +53,7 @@ ${mundur}
  • ${prefix}runtime
  • ${prefix}listbahasa${petik}
 
-*CONVERTER/TOOLS*${petik} 
+*Конвентирование*${petik} 
  • ${prefix}sticker
  • ${prefix}stickerwm
  • ${prefix}smeme
@@ -70,15 +70,15 @@ ${mundur}
  • ${prefix}say
  • ${prefix}translate${petik}
 
-*ANONYMOUS CHATS*${petik}
-• ${prefix}menfess nama|62xxx|pesan
+*Анон чат*${petik}
+• ${prefix}menfess nama|7xxx|pesan
  • ${prefix}anonymous
  • ${prefix}start
  • ${prefix}next
  • ${prefix}stop
  • ${prefix}sendprofile${petik}
 
-*STORE MENU*${petik}
+*Магазин*${petik}
  • ${prefix}list
  • ${prefix}addlist
  • ${prefix}dellist
@@ -97,7 +97,7 @@ ${mundur}
  • proses < reply chat >
  • done < reply chat >${petik}
 
-*RPG GAMES*${petik}
+*RPG*${petik}
  • ${prefix}inventory
  • ${prefix}mining
  • ${prefix}buy 
@@ -128,7 +128,7 @@ ${mundur}
  • ${prefix}goplanet
  • ${prefix}jualbahankimia${petik}
 
-*DOWNLOADS MENU*${petik}
+*Загрузочное меню*${petik}
  • ${prefix}play
  • ${prefix}ytmp3
  • ${prefix}ytmp4
@@ -142,7 +142,7 @@ ${mundur}
  • ${prefix}mediafire
  • ${prefix}gitclone${petik}
 
-*GROUP MENU*${petik}
+*Управление группой*${petik}
  • ${prefix}afk
  • ${prefix}welcome
  • ${prefix}left
@@ -176,25 +176,25 @@ ${mundur}
  • ${prefix}hidetag
  • ${prefix}checksewa${petik}
 
-*GAME MENU*${petik}
+*Игровое меню*${petik}
  • ${prefix}tictactoe
  • ${prefix}delttt
  • ${prefix}casino
  • ${prefix}delcasino${petik}
 
-*SEARCH MENU*${petik}
+*Поисковое меню*${petik}
  • ${prefix}lirik
  • ${prefix}grupwa
  • ${prefix}pinterest
  • ${prefix}ytsearch${petik}
 
-*RANDOM MENU*${petik}
+*Рандом меню*${petik}
  • ${prefix}cecan
  • ${prefix}cogan
  • ${prefix}waifu${petik}
 
 
-*BALANCE MENU*${petik}
+*Баланс меню*${petik}
  • ${prefix}topglobal
  • ${prefix}toplocal
  • ${prefix}buylimit
@@ -203,7 +203,7 @@ ${mundur}
  • ${prefix}limit
  • ${prefix}balance${petik}
 
-*STORAGE*${petik}
+*Память*${petik}
  • ${prefix}addstik
  • ${prefix}addvn
  • ${prefix}addimg
@@ -213,7 +213,7 @@ ${mundur}
  • ${prefix}listimg
  • ${prefix}listvid${petik}
  
-*BAILEYS*${petik}
+*CMD*${petik}
  • ${prefix}fitnah
  • ${prefix}nowa
  • ${prefix}getquoted
@@ -222,7 +222,7 @@ ${mundur}
  • ${prefix}setcmd
  • ${prefix}delcmd${petik}
 
-*OWNERS MENU*${petik}
+*Меню владельца*${petik}
  • ${prefix}autoread
  • ${prefix}autobio
  • ${prefix}autorespond
@@ -244,90 +244,8 @@ ${mundur}
  • ${prefix}delpremium
  • ${prefix}addsewa
  • ${prefix}delsewa${petik}
-
-*ASUPAN MENU*${petik}
- • ${prefix}chika
- • ${prefix}delvira
- • ${prefix}ayu
- • ${prefix}bunga
- • ${prefix}aura
- • ${prefix}nisa
- • ${prefix}ziva
- • ${prefix}yana
- • ${prefix}viona
- • ${prefix}syania
- • ${prefix}riri
- • ${prefix}syifa
- • ${prefix}mama_gina
- • ${prefix}alcakenya
- • ${prefix}mangayutri
- • ${prefix}rikagusriani
- • ${prefix}asupan
- • ${prefix}bocil
- • ${prefix}geayubi
- • ${prefix}santuy
- • ${prefix}ukhty
- • ${prefix}syifa${petik}
-
-*NSFW MENU*${petik}
- • ${prefix}baka
- • ${prefix}smug
- • ${prefix}neko_sfw
- • ${prefix}hentai_gif
- • ${prefix}spank
- • ${prefix}blowjob
- • ${prefix}cumarts
- • ${prefix}eroyuri
- • ${prefix}eroneko
- • ${prefix}erokemonomimi
- • ${prefix}erokitsune
- • ${prefix}ero
- • ${prefix}feet
- • ${prefix}erofeet
- • ${prefix}feetgif
- • ${prefix}femdom
- • ${prefix}futanari
- • ${prefix}hentai
- • ${prefix}holoero
- • ${prefix}holo
- • ${prefix}keta
- • ${prefix}kitsune
- • ${prefix}kemonomimi
- • ${prefix}pussyart
- • ${prefix}pussywankgif
- • ${prefix}girl_solo
- • ${prefix}girl_solo_gif
- • ${prefix}tits
- • ${prefix}trap
- • ${prefix}yuri
- • ${prefix}avatar2
- • ${prefix}anal
- • ${prefix}bj
- • ${prefix}boobs
- • ${prefix}classic
- • ${prefix}cumsluts
- • ${prefix}kuni
- • ${prefix}lesbian
- • ${prefix}neko
- • ${prefix}neko_gif
- • ${prefix}ahegao
- • ${prefix}bdsm
- • ${prefix}cuckold
- • ${prefix}cum
- • ${prefix}foot
- • ${prefix}gangbang
- • ${prefix}glasses
- • ${prefix}jahy
- • ${prefix}masturbation
- • ${prefix}nsfw_neko
- • ${prefix}orgy
- • ${prefix}panties
- • ${prefix}tentacles
- • ${prefix}thighs
- • ${prefix}zettai${petik}
-
-
-*TEXTPRO MENU*${petik}
+ 
+*Дизайн меню*${petik}
  • ${prefix}halloween2
  • ${prefix}horror
  • ${prefix}game8bit
@@ -512,8 +430,8 @@ ${mundur}
 }
 
 exports.donate = (pushname, ownerNumber) => {
-    return`Contact  Owner:
-wa.me/${ownerNumber} (Owner)`
+    return`Поддержите владельца:
+wa.me/${ownerNumber} (☑)`
 }
 
 exports.sewanya = `List Sewa ubah sendiri di folder command, file help.js 👌`
