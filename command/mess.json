@@ -1,13 +1,13 @@
 {
-    "wait": "```PLEASE WAIT```👌",
+    "wait": "```Пожалуйста подождите```👌",
     "error": {
-        "Iv": "Link yang kamu berikan tidak valid",
-        "api": "Maaf terjadi kesalahan"
+        "Iv": "Указанная вами ссылка недействительна",
+        "api": "К сожалению, произошла ошибка"
     },
-    "OnlyGrup": "Perintah ini hanya bisa digunakan di grup",
-    "OnlyPM": "Perintah ini hanya bisa digunakan di private message",
-    "GrupAdmin": "Perintah ini hanya bisa digunakan oleh Admin Grup",
-    "BotAdmin": "Bot Must be admin",
-    "OnlyOwner": "Perintah ini hanya dapat digunakan oleh owner bot",
-    "OnlyPrem": "Perintah ini khusus member premium"
+    "OnlyGrup": "Эту команду можно использовать только в группах",
+    "OnlyPM": "Эту команду можно использовать только в личных сообщениях",
+    "GrupAdmin": "Эта команда может использоваться только администраторами группы.",
+    "BotAdmin": "Бот должен быть администратором",
+    "OnlyOwner": "Эту команду может использовать только владелец бота",
+    "OnlyPrem": "Это только для премиум чатов
 }
